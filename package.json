@@ -1,0 +1,19 @@
+{
+  "name": "test-deploy-chrome",
+  "version": "0.0.1",
+  "description": "Test for deploying to chrome webstore",
+  "scripts": {
+    "test": "xo"
+  },
+  "author": "Paul Molluzzo <paul@molluzzo.com> (http://paul.molluzzo.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "xo": "*"
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "space": true
+  }
+}

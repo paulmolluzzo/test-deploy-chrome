@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - 'node'
+before_install: npm install -g grunt-cli
+after_success:
+  if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    grunt
+  fi
