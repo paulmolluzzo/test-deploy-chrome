@@ -1,5 +1,5 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('deploying 0.1.1');
+  console.log('deploying 0.1.2');
 });

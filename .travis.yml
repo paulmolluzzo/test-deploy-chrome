@@ -1,7 +1,12 @@
 language: node_js
 node_js:
 - node
-after_success: ./chrome-deploy.sh
+deploy:
+  provider: script
+  script: ./chrome-deploy.sh
+  on:
+    branch: master
+    tags: true
 env:
   global:
   - secure: gCIrWjZjC/3JDnfaObnx+jZMK6sTiF47Dyewb4MpEerY7K3SSq8WNasBQV9XTpnVF+PgSJ/fE0JZvM4Y3Htam8UBcgEiDIgjuGeQYRd59EcHWsM83fZYQTSmEp48saChrLiDEYCT9BjZfRq2OFSnaZg80ZH+omZQlfGu590lGtTpnEIV/d+ew/3Xn1Uivm+neW8VWP0misCbWUvWK7AUL42U+Wf4+KCfODnJruUujpaZ8xDj4pyXUlTXbf5+Hl6rX4jjhWJlGf7Ry/Z1/WD5NwPvM3Ar8TkGt+v5d8QiYF7J4usfkv4XB8ADVixAalXc0RSTDPrBzkpLchGou+/WCiO+nR5ValgFPXzRi1GvXO5loudWmQnfsAVL4UBDPMHNpLiHYYu+7Q7faEAOQJpdaIgOrmWWhTkOfQKAN2ozY37U9FOhf9GCCBC1xJV7Jrr/gBJBxl8+CazciSfEJWyhawXCUliTvX/8NHy1JsY/26nO0wx085k7PaOyAW/qR3L/hNeioLQIQSeIEzb/1pM799sp11rVdk2j/U6sZqAyu2Gsenyyq+tsDpx+PDV4mJPI+/o4LEEP2WAtsOlJCpUlV8eUPuFDByDUODxAdZgcRnKQwEzTzPYtwrRfNS4M2hQ/v5C0cnv99I8foeLjkdbS7Huh0dwVdjXJj7vZVYNhA9A=
