@@ -1,4 +1,4 @@
-var archiveName = '/extension.zip';
+var archiveName = 'extension.zip';
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         test_chrome_deploy: {
           appID: 'gppbnpldokpcchfpckfdoiaeboinfldm', // edit with your App ID from chrome webstore
           publish: true,
-          zip: process.env.TRAVIS_BUILD_DIR + archiveName
+          zip: archiveName
         }
       }
     }
