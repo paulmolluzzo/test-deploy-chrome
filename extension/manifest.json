@@ -3,8 +3,8 @@
 
   "name": "Test Deploy Chrome",
   "short_name": "Test Deploy Chrome",
-  "description": "Tsting auto deployment to Chrome",
-  "version": "0.0.1",
+  "description": "Testing auto deployment to Chrome",
+  "version": "0.1.0",
 
   "permissions": [
       "activeTab"

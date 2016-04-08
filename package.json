@@ -1,6 +1,6 @@
 {
   "name": "test-deploy-chrome",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Test for deploying to chrome webstore",
   "scripts": {
     "test": "xo"
@@ -14,6 +14,13 @@
     "envs": [
       "browser"
     ],
-    "space": true
+    "space": true,
+    "rules": {
+      "camelcase": 0
+    }
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-webstore-upload": "^0.8.10"
   }
 }
