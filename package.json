@@ -8,7 +8,10 @@
   "author": "Paul Molluzzo <paul@molluzzo.com> (http://paul.molluzzo.com)",
   "license": "MIT",
   "devDependencies": {
-    "xo": "*"
+    "xo": "*",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-webstore-upload": "^0.8.10"
   },
   "xo": {
     "envs": [
@@ -18,10 +21,5 @@
     "rules": {
       "camelcase": 0
     }
-  },
-  "dependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-webstore-upload": "^0.8.10"
   }
 }
