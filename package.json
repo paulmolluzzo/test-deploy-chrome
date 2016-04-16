@@ -1,6 +1,6 @@
 {
   "name": "test-deploy-chrome",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Test for deploying to chrome webstore",
   "scripts": {
     "test": "xo"
