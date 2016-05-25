@@ -1,6 +1,6 @@
 {
   "name": "test-deploy-chrome",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Test for deploying to chrome webstore",
   "scripts": {
     "zip": "zip -r extension.zip extension/",
