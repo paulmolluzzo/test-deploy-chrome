@@ -1,17 +1,17 @@
 {
   "name": "test-deploy-chrome",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Test for deploying to chrome webstore",
   "scripts": {
+    "zip": "zip -r extension.zip extension/",
+    "release": "npm run zip && webstore upload --file extension.zip --extension-id 'gppbnpldokpcchfpckfdoiaeboinfldm' --auto-publish",
     "test": "xo"
   },
   "author": "Paul Molluzzo <paul@molluzzo.com> (http://paul.molluzzo.com)",
   "license": "MIT",
   "devDependencies": {
-    "xo": "*",
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-webstore-upload": "^0.8.10"
+    "chrome-webstore-upload-cli": "^0.2.0",
+    "xo": "*"
   },
   "xo": {
     "envs": [

@@ -1,3 +1,4 @@
+
 var archiveName = 'extension.zip';
 module.exports = function (grunt) {
   grunt.initConfig({

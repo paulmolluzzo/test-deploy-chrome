@@ -3,7 +3,7 @@ node_js:
 - node
 deploy:
   provider: script
-  script: ./chrome-deploy.sh
+  script: npm run release
   on:
     branch: master
     tags: true
